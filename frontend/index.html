@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP3</title>
+    <link rel="icon" href="https://i.pinimg.com/originals/44/14/9d/44149de9b084cee06868de011c0404ef.png">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="section">
+            <div id="section__left">
+                <div class="logo">
+                    <img src="./img/logo.png" alt="">
+                </div>
+                <div class="nav">
+                    <div class="nav__item">
+                        <a href="/my-music" class="nav__item__link">
+                            <i class="fa-solid fa-user"></i> Cá Nhân
+                        </a>
+                    </div>
+                    <div class="nav__item">
+                        <a href="/" class="nav__item__link">
+                            <i class="fa-solid fa-compact-disc"></i> Khám Phá
+                        </a>
+                    </div>
+                    <div class="nav__item">
+                        <a href="/chart" class="nav__item__link">
+                            <i class="fa-solid fa-chart-column"></i> Music Chart
+                        </a>
+                    </div>
+                    <div class="nav__item">
+                        <a href="radio" class="nav__item__link">
+                            <i class="fa-solid fa-tower-broadcast"></i>Video MV
+                        </a>
+                    </div>
+                    <div class="nav__item">
+                        <a href="/follow" class="nav__item__link">
+                            <i class="fa-solid fa-tv"></i> Top 100
+                        </a>
+                    </div>
+                    <div class="nav__item">
+                        <a href="/separation" class="nav__item__link">
+                            <i class="fa-solid fa-tv"></i> Separation
+                        </a>
+                    </div>
+
+                </div>
+                <div class="create-playlist">
+
+                </div>
+            </div>
+            <div id="section__right">
+
+                <div id="section__right__top">
+                    <div id="directional">
+                        <div class="directional__item icon-left"><i class="fa-solid fa-arrow-left"></i></div>
+                        <div class="directional__item icon-right"><i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                    <div id="search">
+                        <input type="text" id="keyword" placeholder="Nhập tên bài hát hoặc tên ca sĩ" autocomplete="off" />
+                        <a id="search__button">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
+                    <div id="setting">
+                        <div class="setting__item btn__login">
+                            <i class="fa-brands fa-google icon-login"></i>
+                            <i class="fa-solid fa-sign-out-alt icon-logout"></i>
+                            <!-- <a href="" class="btn__login">
+                            </a> -->
+                        </div>
+                        <div class="setting__item">
+                            <img class="btn__user" src="./img/Users-User-Male-icon.png">
+                        </div>
+
+                    </div>
+
+                </div>
+                <div id="section__right__bottom">
+                    <!-- main content/render page -->
+                    <div class="content__item my-music__content">
+                        <div class="loading"><img src="img/audio-wave.gif" alt=""></div>
+                    </div>
+                    <div class="content__item home__content">
+                        <div class="loading"><img src="img/audio-wave.gif" alt=""></div>
+                    </div>
+                    <div class="content__item chart__content">
+                        <div class="loading"><img src="img/audio-wave.gif" alt=""></div>
+                    </div>
+                    <div class="content__item radio__content">
+                        <div class="loading"><img src="img/audio-wave.gif" alt=""></div>
+                    </div>
+                    <div class="content__item follow__content">
+                        <div class="loading"><img src="img/audio-wave.gif" alt=""></div>
+                    </div>
+                    <div class="content__item separation__content">
+                        <div class="loading"><img src="img/audio-wave.gif" alt=""></div>
+                    </div>
+                    <div class="content__item search__content">
+                        <div class="loading"><img src="img/audio-wave.gif" alt=""></div>
+                    </div>
+                    <div class="content__item artist__content">
+                        <div class="loading"><img src="img/audio-wave.gif" alt=""></div>
+                    </div>
+                    <div class="content__item playlist__content">
+                        <div class="loading"><img src="img/audio-wave.gif" alt=""></div>
+                    </div>
+                    <div class="content__item video__content">
+                        <div class="loading"><img src="img/audio-wave.gif" alt=""></div>
+                    </div>
+
+
+                    <div id="content_404" class="content__item ">
+                        <h1 id="title" style="text-align: center; margin-top:160px; color: brown">ERROR: PAGE NOT FOUND</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="dashboard" class="dashboard">
+            <div class="get__song">
+                <div class="song__img">
+                    <img class="song__img__item" src="./img/song_img.png" alt="">
+                </div>
+                <div class="song__body">
+                    <h4 class="title">Tên Bài Hát</h4>
+                    <p class="author">Ngệ Sĩ</p>
+                </div>
+                <div class="option">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="control">
+                <div class="control__btn">
+                    <div class="btn btn-repeat">
+                        <i class="fas fa-redo"></i>
+                    </div>
+                    <div class="btn btn-prev">
+                        <i class="fas fa-step-backward"></i>
+                    </div>
+                    <div class="btn btn-toggle-play">
+                        <i class="fas fa-pause icon-pause"></i>
+                        <i class="fas fa-play icon-play"></i>
+                    </div>
+                    <div class="btn btn-next">
+                        <i class="fas fa-step-forward"></i>
+                    </div>
+                    <div class="btn btn-random">
+                        <i class="fas fa-random"></i>
+                    </div>
+                </div>
+                <div class="time">
+                    <span class="current-time">00:00</span>
+                    <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+                    <span class="duration-time">00:00</span>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="like">
+                <div class="like__item favorite">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="like__item download">
+                    <i class="fas fa-download"></i>
+                </div>
+            </div>
+
+        </div>
+        <audio id="audio" src=""></audio>
+    </div>
+
+    <script type="module" src="js/index.js"></script>
+
+</body>
+
+</html>

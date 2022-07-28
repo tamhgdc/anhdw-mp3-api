@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.admin {
+    width: 100%;
+    height: 100%;
+}
+
+.tabs {
+    display: none;
+}
+
+.tabs.active {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.tabs .tab_title {
+    font-family: 'Dosis', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 50px;
+}
+
+.tabs .tab_title .tab_title_item {
+    background-color: #e5e5e5;
+    color: gray;
+    padding: 20px;
+    margin: 8px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.tabs .tab_title .tab_title_item.active {
+    background-color: rgb(206, 233, 247);
+    color: black;
+}
+
+.tabs .tab_content {
+    width: 100%;
+    min-width: 500px;
+    min-height: 300px;
+    padding: 20px;
+    background-color: rgb(206, 233, 247);
+    margin: 8px;
+    border-radius: 8px;
+}
+
+.tabs .tab_content .tab_content_item {
+    display: none;
+}
+
+.tabs .tab_content .tab_content_item.active {
+    display: block;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+.song_in_album,
+.select_song {
+    display: flex;
+    flex-direction: row;
+    margin: 8px 8px 8px 0;
+}
+
+.plus_song,
+.minus_song {
+    padding: 4px;
+    margin-left: 8px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+
+.plus_song {
+    background-color: #00ff00;
+}
+
+.minus_song {
+    background-color: #ff0000;
+}
+
+.album,
+.song {
+    padding: 8px;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.album_name,
+.song_title,
+.song_src {
+    margin: 8px;
+}
+
+.album:hover,
+.song:hover {
+    background-color: #6d92ef;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="./css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+
+    <div class="admin">
+        <div class="user"></div>
+        <div class="tabs">
+            <div class="tab_title">
+                <div class="tab_title_item active">
+                    Thể loại
+                </div>
+                <div class="tab_title_item">
+                    Nghệ sĩ
+                </div>
+                <div class="tab_title_item">
+                    Bài hát
+                </div>
+                <div class="tab_title_item">
+                    Album
+                </div>
+            </div>
+            <div class="tab_content">
+                <div class="tab_content_item active">
+                    Tên thể loại:<input type="text" class="txt_genre">
+                    <button class="btn_add_genre">Thêm thể loại</button>
+                    <h4>Danh sách thể loại</h4>
+                    <div class="list_genre">
+
+                    </div>
+                </div>
+                <div class="tab_content_item">
+                    Tên nghệ sĩ:<input type="text" class="txt_artist">
+                    <br> Avatar:<input type="file" class="avatar_artist" accept="image/*">
+                    <br><button class="btn_add_artist" type="button">Thêm nghệ sĩ</button>
+                    <h4>Danh sách nghệ sĩ</h4>
+                    <div class="list_artist">
+                        <div class="artist">
+                            <div class="artist_avatar">
+                                <img src="./img/Users-User-Male-icon.png" alt="">
+                            </div>
+                            <div class="artist_name">
+                                <h4>Nghệ sĩ 1</h4>
+                            </div>
+                            <div class="artist_action">
+                                <button class="btn_edit_artist">Sửa</button>
+                                <button class="btn_delete_artist">Xóa</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab_content_item">
+                    Tên bài hát:<input type="text" class="txt_song">
+                    <br>Avatar:<input type="file" class="avatar_song" accept="image/*">
+                    <br>Audio:<input type="file" class="audio" accept="audio/*">
+                    <br>Thể loại:<select class="genre_song">
+                        <option value="">Chọn thể loại</option>
+                        <option value="Thể loại 2">Thể loại 2</option>
+                        <option value="Thể loại 3">Thể loại 3</option>
+                    </select>
+                    <br>Nghệ sĩ:<select class="artist_song">
+                        <option value="Nghệ sĩ 1">Nghệ sĩ 1</option>
+                        <option value="Nghệ sĩ 2">Nghệ sĩ 2</option>
+                        <option value="Nghệ sĩ 3">Nghệ sĩ 3</option>
+                    </select>
+                    <br><button class="btn_add_song" type="button">Thêm bài hát</button>
+                    <h4>Danh sách bài hát</h4>
+                    <div class="list_song">
+                        <div class="song">
+                            <div class="song_thumbnail">
+                                <img src="./img/Users-User-Male-icon.png" alt="">
+                            </div>
+                            <div class="song_title">
+                                <h4>Title</h4>
+                                <p>Artist</p>
+                                <p>Genre</p>
+                            </div>
+                            <div class="song_src">
+                                <a href="">Nghe thử</a>
+                            </div>
+                            <div class="song_action">
+                                <button class="btn_edit_song">Sửa</button>
+                                <button class="btn_delete_song">Xóa</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tab_content_item">
+                    Tên album:<input type="text" class="txt_album">
+                    <br>Avatar:<input type="file" class="avatar_album" accept="image/*">
+
+                    <div class="select_song">
+                        Bài hát:<select class="songs">
+                            <option value="Bài hát 1">Bài hát 1</option>
+                            <option value="Bài hát 2">Bài hát 2</option>
+                            <option value="Bài hát 3">Bài hát 3</option>
+                        </select>
+                        <div class="plus_song">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="list_add_song"></div>
+                    <button class="btn_add_album">Thêm album</button>
+                    <h4>Danh sách album</h4>
+                    <div class="list_album">
+                        <div class="album">
+                            <div class="album_avatar">
+                                <img src="./img/Users-User-Male-icon.png" alt="">
+                            </div>
+                            <div class="album_name">
+                                <h4>Album 1</h4>
+                            </div>
+                            <div class="album_action">
+                                <button class="btn_edit_album">Sửa</button>
+                                <button class="btn_delete_album">Xóa</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="js/admin/admin.js"></script>
+</body>
+
+</html>
